@@ -1,7 +1,7 @@
 import Home from "./routes/home/home";
 import { Routes, Route, Outlet } from "react-router";
 import Navigation from "./routes/navigation/navigation";
-import SingIn from "./routes/sing-in/sing-in";
+import Authentication from "./routes/authentication/authentication";
 
 const Shop = () => {
   return <h1>I am shop</h1>;
@@ -14,7 +14,7 @@ function App() {
         <Route index element={<Home />} />
 
         <Route path="shop" element={<Shop />} />
-        <Route path="sign-in" element={<SingIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
