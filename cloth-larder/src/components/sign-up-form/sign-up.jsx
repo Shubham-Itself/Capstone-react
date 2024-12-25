@@ -38,6 +38,7 @@ const SignUp = () => {
       );
 
       await createUserDocumentFromAuth(user, { displayName });
+
       if (user) {
         alert("Account Created Successfully");
       }
